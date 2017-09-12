@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mr9.hammingdistance.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1st Input"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/editIn1"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editIn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:digits="01"
+        android:ems="10"
+        android:hint="1st Input"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/editIn2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2nd Input"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/editIn2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editIn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp"
+        android:digits="01"
+        android:ems="10"
+        android:hint="2nd Input"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="66dp"
+        android:background="@android:color/holo_orange_light"
+        android:elevation="10sp"
+        android:text="Find Hamming Distance"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hamming Distance"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+</RelativeLayout>
